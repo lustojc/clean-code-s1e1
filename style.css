@@ -2,30 +2,37 @@ ul {
     margin: 0;
     padding: 0px;
   }
+  
   li {
     list-style: none;
   }
+  
   input,
   button {
     outline: none;
   }
+   
   .body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
   }
+  
   .header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
   }
+  
   .header__image {
     width: 100%;
   }
+  
   .header__link {
     font-family: fantasy, cursive;
   }
+  
   @media (max-width:768px) {
   
     .header {
@@ -33,23 +40,28 @@ ul {
     }
   
   }
+  
   .main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
   }
+  
   .add-item {
     margin: 1em 0;
   }
+  
   .input,
   .task__label {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
   }
+  
   .add-item__row {
     display: flex;
   }
+  
   .btn {
     background: none;
     border: 0px;
@@ -59,9 +71,11 @@ ul {
     font-family: Lato, sans-serif;
     cursor: pointer;
   }
+  
   .btn:hover {
     color: #3a3a3a;
   }
+  
   .title {
     color: #333;
     font-weight: 700;
@@ -71,6 +85,7 @@ ul {
     margin: 0;
     text-transform: uppercase;
   }
+  
   .input {
     margin: 0;
     font-size: 18px;
@@ -83,15 +98,19 @@ ul {
     font-family: Lato, sans-serif;
     color: #888;
   }
+  
   .input:focus {
     color: #333;
   }
+  
   .add-item__title {
     margin: 0 0 20px;
   }
+  
   .add-item__input {
     width: 318px;
   }
+  
   .task {
     overflow: hidden;
     padding: 20px 0;
@@ -100,40 +119,50 @@ ul {
     justify-content: space-between;
     align-items: center;
   }
+  
   .task > * {
     vertical-align: middle;
   }
+  
   .task__checkbox {
     margin: 0 10px;
   }
+  
   .task__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
   }
+  
   .task__input {
     width: 226px;
   }
+  
   .task__btn-icon {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
   }
+  
   .task__btn-icon:hover {
     transform: rotateZ(0);
   }
+  
   .completed__item .task__label {
     text-decoration: line-through;
     color: #888;
   }
+  
   .task__input {
     display: none;
   }
+  
   .task--edit-mode .task__input {
     display: inline-block;
     width: 224px;
   }
+  
   .task--edit-mode .task__label {
     display: none;
   }
